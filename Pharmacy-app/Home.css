@@ -1,0 +1,112 @@
+body{
+    background-color: honeydew;
+}
+header{
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    bottom: 0%;
+    text-align: center;
+}
+#navigate{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.list-unstyled {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu {
+    background-color: lightgray;
+}
+
+.main-menu > li {
+    display: inline-block;
+}
+
+.main-menu > li > a {
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.main-menu > li > a:hover {
+    background-color: black;
+}
+
+.item-with-sub-menu {
+    position: relative;
+}
+
+/* we need to hide this initially */
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 35px; /* from the top of the .item-with-sub-menu element */
+    left: 0px;
+    white-space: nowrap;
+    padding: 1em;
+    background-color: lightgray;
+}
+
+/* modify the selector so that it selects the sub-menu only when it is within the ..item-with-sub-menu item that is being hovered upon */
+.item-with-sub-menu:hover .sub-menu {
+    display: block;
+}
+
+/* .AnimatedImages img:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 10;
+} */
+@keyframes slider {
+	0% { transform: translateX(0px); }
+	20% { transform: translateX(0px); }
+	25% { transform: translateX(800px); }
+	45% { transform: translateX(800px); }
+	50% { transform: translateX(1600px); }
+	70% { transform: translateX(1600px); }
+	75% { transform: translateX(2400px); }
+	95% { transform: translateX(2400px); }
+	100% { transform: translateX(0px);  }
+}
+
+.AnimatedImages {
+	animation-name:slider;
+	animation-duration:10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count:infinite;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+

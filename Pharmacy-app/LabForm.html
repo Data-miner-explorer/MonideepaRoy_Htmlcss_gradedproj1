@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>Laboratory Test Form</title>
+    <link rel="stylesheet" href="LabForm.css">    
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Lab Test Form</h1>
+            <img src="Images/Lab-Test/lab-test.jpg" width=600 height=300>        
+        </header>
+        <form action="">
+            <article>
+                <h2>1. Your Contact Details</h2>
+                <h3>Full Name</h3>
+                <input type="text" title="name" required spellcheck="true">
+            </article>
+
+            <article>
+                <h3>Patient Id if exists</h3>
+                <input type="number" min="6000000000" max="9999999999" required>
+            </article>
+            <article>
+                <h3>Contact Number</h3>
+                <input type="number" min="6000000000" max="9999999999" required>
+            </article>
+
+            <article>
+                <h3>Email Id</h3>
+                <input type="email" required>
+            </article>
+
+            <article>
+                <h2>2. Address</h2>
+                <h3>H-No</h3>
+                <input type="text" required>
+
+                <h3>Street</h3>
+                <input type="text" required>
+
+                <h3>Area</h3>
+                <input type="text" required>
+
+                <h3>District</h3>
+                <select name="District" id="district" required>
+                    <option value="">Choose</option>
+                    <option value="Bangalore Urban">Bangalore Urban</option>
+                    <option value="Bangalore Rural">Bangalore Rural</option>
+                    <option value="Ramnagar">Ramnagar</option>
+                </select>
+            </article>
+
+            <article>
+                <h3>Choose the Test Type</h3>
+                <p>Check atleast one box without fail</p>
+                <input type="checkbox" id="c1" name="option1" value="CBC">
+                <label for="c1">CBC</label>
+                <br>
+                <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                <label for="c2">Complete Urine</label>
+                <br>
+                <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                <label for="c3">Lipid Profile</label>
+                <br>
+                <input type="checkbox" id="c4" name="option3" value="Thyroid Stimulating Hormone(TSH)">
+                <label for="c3">Thyroid Stimulating Hormone(TSH)</label>
+                <br>
+                <input type="checkbox" id="c4" name="option3" value="Glucose Test">
+                <label for="c3">Glucose Test</label>
+            </article>
+
+            <article>
+                <h3>Do you want a hard copy of the report also?</h3>
+                <input type="radio" id="c5" name="option" value="True" required>
+                <label for="c5">Yes</label>
+                <br>
+                <input type="radio" id="c6" name="option" value="False">
+                <label for="c6">No</label>
+            </article>
+            
+            <article>
+                <h3>Select your comfortable date and time</h3>
+                <label for="c1">i. Date </label>
+                <input type="date" required>
+                <br>
+                <label for="c1">ii. Time </label>
+                <input type="time" required>
+            </article>
+
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+        <footer>
+            This form is developed by MR as GL assignment.
+        </footer>
+    </section>
+</body>
+</html>
